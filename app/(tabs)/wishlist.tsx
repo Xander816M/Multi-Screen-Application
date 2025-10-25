@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const pleaseRename = () => {
+const Wishlist = () => {
   return (
     <View>
       <Text>pleaseRename</Text>
@@ -9,6 +9,6 @@ const pleaseRename = () => {
   )
 }
 
-export default pleaseRename
+export default Wishlist
 
 const styles = StyleSheet.create({})
