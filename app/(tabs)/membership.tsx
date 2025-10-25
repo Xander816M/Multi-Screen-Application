@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const pleaseRename = () => {
+const Membership = () => {
   return (
     <View>
       <Text>pleaseRename</Text>
@@ -9,6 +9,6 @@ const pleaseRename = () => {
   )
 }
 
-export default pleaseRename
+export default Membership
 
 const styles = StyleSheet.create({})
