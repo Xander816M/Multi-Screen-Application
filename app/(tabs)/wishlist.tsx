@@ -21,6 +21,19 @@ const Wishlist = () => {
   const [pageSelected, setPageSelected] = useState(false);
   return (
     <View style={styles.container}>
+      {/* Top Bar */}
+      <View style={styles.topBar}>
+        
+        <Text style={styles.topBarContent}>Online + App-only Deals Until 10/30 | SHOP NOW</Text>
+
+          <TouchableOpacity>
+          <Image 
+            style={styles.topBarButton}
+            source={require("../../assets/images/right-arrow.png")}
+          />
+        </TouchableOpacity>
+          
+      </View>
       <View style={styles.heading}>
         <Text style={styles.headingText}>Wishlist</Text>
         <View style={styles.searchAndCart}>
@@ -169,23 +182,8 @@ const Wishlist = () => {
         </View>
       </View>
 
-    <View>
-
-      {/* Top Bar */}
-      <View style={styles.topBar}>
-        
-        <Text style={styles.topBarContent}>Online + App-only Deals Until 10/30 | SHOP NOW</Text>
-
-          <TouchableOpacity>
-          <Image 
-            style={styles.topBarButton}
-            source={require("../../assets/images/right-arrow.png")}
-          />
-        </TouchableOpacity>
-          
+      
       </View>
-      </View>
-</View>
   );
 };
 
@@ -283,7 +281,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     borderTopColor: "#e4e4e4ff",
     borderTopWidth: 4,
-    bottom: Platform.OS === "android" ? -580 : Platform.OS === "web" ? -500 : 0,
+    bottom: Platform.OS === "android" ? -280 : Platform.OS === "web" ? -500 : 0,
   },
   navbarTouchableOpacity: {
     paddingTop: 8,

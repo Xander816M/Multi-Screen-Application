@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     borderTopColor: "#e4e4e4ff",
     borderTopWidth: 4,
-    bottom: Platform.OS === "android" ? -710 : Platform.OS === "web" ? -500 : 0,
+    bottom: Platform.OS === "android" ? -630 : Platform.OS === "web" ? -500 : 0,
   },
   tab: {
     paddingTop: 8,
