@@ -16,7 +16,7 @@ export default function Index() {
   const [pageSelected, setPageSelected] = useState(2);
   
   return (
-    <View>
+    <View style={styles.container}>
             {/* Top Bar */}
       <View style={styles.topBar}>  
         <Text style={styles.topBarContent}>Online + App-only Deals Until 10/30 | SHOP NOW</Text>
@@ -367,11 +367,11 @@ export default function Index() {
         </View>
       </View>
 
-    </View>
-  );
+    
+  
       {/* navber'bottom bar' */}
         <View style={styles.navbar}>
-          <TouchableOpacity style={styles.tab}>
+          <TouchableOpacity style={styles.bottomTab}>
             <Octicons
               name="home-fill"
               size={17}
@@ -381,7 +381,7 @@ export default function Index() {
             <Text style={styles.text}>Home</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={styles.tab}
+            style={styles.bottomTab}
             onPress={() => router.push("/wishlist")}
           >
             <MaterialCommunityIcons
@@ -392,12 +392,12 @@ export default function Index() {
             />
             <Text style={[styles.text, styles.notselected]}>Wishlist</Text>
           </TouchableOpacity>
-          <View style={styles.tab}>
+          <View style={styles.bottomTab}>
             <Fontisto name="bell" size={17} color="gray" style={styles.icon} />
             <Text style={[styles.text, styles.notselected]}>Notification</Text>
           </View>
           <TouchableOpacity
-            style={styles.tab}
+            style={styles.bottomTab}
             onPress={() => router.push("/membership")}
           >
             <Octicons
@@ -408,7 +408,7 @@ export default function Index() {
             />
             <Text style={[styles.text, styles.notselected]}>Membership</Text>
           </TouchableOpacity>
-          <View style={styles.tab}>
+          <View style={styles.bottomTab}>
             <Octicons
               name="three-bars"
               size={17}
@@ -420,6 +420,7 @@ export default function Index() {
         </View>
       </View>
   )
+    
 }
 
 const styles = StyleSheet.create({
@@ -428,9 +429,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     borderTopColor: "#e4e4e4ff",
     borderTopWidth: 4,
-    bottom: Platform.OS === "android" ? -630 : Platform.OS === "web" ? -500 : 0,
+    bottom: Platform.OS === "android" ? 0 : Platform.OS === "web" ? -500 : 0,
   },
-  tab: {
+  bottomTab: {
     paddingTop: 8,
     alignItems: "center",
   },
@@ -462,7 +463,7 @@ const styles = StyleSheet.create({
   topBarContent: {
     color:"#fff",
     marginTop:50,
-    fontSize:17,
+    fontSize:16,
     paddingBottom:5
     
     
