@@ -4,6 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="8758f4cb-ee98-4abc-9c8f-62419a0ec438" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/membership.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/membership.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <list default="true" id="8758f4cb-ee98-4abc-9c8f-62419a0ec438" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Xander816M&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Xander816M/Multi-Screen-Application.git&quot;,
+    &quot;accountId&quot;: &quot;935289af-9981-45c2-a7e2-b8e0acdcbc07&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
     "state": "OPEN",
@@ -45,6 +66,8 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "athul",
+    "last_opened_file_path": "C:/Sem 3/Mob dev/Current/Multi-Screen-Application",
     "git-widget-placeholder": "xander",
     "last_opened_file_path": "C:/Users/xande/OneDrive - Southern Alberta Institute of Technology/Desktop/workspace/React/Multi-Screen-Application/Multi-Screen-Application",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
