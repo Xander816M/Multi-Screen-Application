@@ -1,11 +1,6 @@
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-const pleaseRename = () => {
-export default function Membership() {
-  return (
-    <View>
-      <Text>pleaseRename</Text>
 export default function Membership() {
   return (
     <View style={styles.container}>
@@ -26,7 +21,7 @@ export default function Membership() {
       {/* Membership Card */}
       <View style={styles.card}>
         <Image
-          source={require("../../assets/images/barcode.png")} // barcode image
+          source={require("../../assets/images/barcode.png")}
           style={styles.barcode}
         />
         <Text style={styles.memberId}>7170 6259 70873</Text>
@@ -72,7 +67,6 @@ const MenuItem = ({ icon, label }) => (
   </TouchableOpacity>
 );
 
-const styles = StyleSheet.create({})const styles = StyleSheet.create({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
