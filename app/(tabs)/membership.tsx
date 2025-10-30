@@ -21,7 +21,7 @@ export default function Membership() {
       {/* Membership Card */}
       <View style={styles.card}>
         <Image
-          source={require("../../assets/images/barcode.png")} // barcode image
+          source={require("../../assets/images/barcode.png")}
           style={styles.barcode}
         />
         <Text style={styles.memberId}>7170 6259 70873</Text>
