@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
+    <list default="true" id="8758f4cb-ee98-4abc-9c8f-62419a0ec438" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +37,21 @@
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Xander816M"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Xander816M/Multi-Screen-Application.git",
+    "accountId": "935289af-9981-45c2-a7e2-b8e0acdcbc07"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="34cTziDACMMwpqJ1Ev7TrzSUm3e" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,6 +68,8 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "athul",
     "last_opened_file_path": "C:/Sem 3/Mob dev/Current/Multi-Screen-Application",
+    "git-widget-placeholder": "xander",
+    "last_opened_file_path": "C:/Users/xande/OneDrive - Southern Alberta Institute of Technology/Desktop/workspace/React/Multi-Screen-Application/Multi-Screen-Application",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>

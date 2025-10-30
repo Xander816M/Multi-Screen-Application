@@ -6,6 +6,8 @@ export default function Membership() {
   return (
     <View>
       <Text>pleaseRename</Text>
+export default function Membership() {
+  return (
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
@@ -62,7 +64,6 @@ export default function Membership() {
   );
 }
 
-export default pleaseRename
 // Reusable Menu Item component
 const MenuItem = ({ icon, label }) => (
   <TouchableOpacity style={styles.menuItem}>
@@ -72,6 +73,7 @@ const MenuItem = ({ icon, label }) => (
 );
 
 const styles = StyleSheet.create({})const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
