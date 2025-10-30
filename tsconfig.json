@@ -5,8 +5,8 @@
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "jsx": "react-jsx",
- main
+  },
+ "main":{
     "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
