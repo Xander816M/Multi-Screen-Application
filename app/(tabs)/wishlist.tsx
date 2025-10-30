@@ -10,9 +10,7 @@ import {
   Octicons,
   MaterialCommunityIcons,
   Fontisto,
-  Feather,
   FontAwesome6,
-  Ionicons,
 } from "@expo/vector-icons";
 import React, { useState } from "react";
 import { router } from "expo-router";
@@ -23,16 +21,16 @@ const Wishlist = () => {
     <View style={styles.container}>
       {/* Top Bar */}
       <View style={styles.topBar}>
-        
-        <Text style={styles.topBarContent}>Online + App-only Deals Until 10/30 | SHOP NOW</Text>
+        <Text style={styles.topBarContent}>
+          Online + App-only Deals Until 10/30 | SHOP NOW
+        </Text>
 
-          <TouchableOpacity>
-          <Image 
+        <TouchableOpacity>
+          <Image
             style={styles.topBarButton}
             source={require("../../assets/images/right-arrow.png")}
           />
         </TouchableOpacity>
-          
       </View>
       <View style={styles.heading}>
         <Text style={styles.headingText}>Wishlist</Text>
@@ -44,9 +42,9 @@ const Wishlist = () => {
             style={styles.headingTouchableOpacity}
           />
           <Image
-              source={require("../../assets/images/shopping-cart.png")}
-              style={styles.headingImage}
-            />
+            source={require("../../assets/images/shopping-cart.png")}
+            style={styles.headingImage}
+          />
         </View>
       </View>
       <View style={styles.tabBar}>
@@ -89,7 +87,10 @@ const Wishlist = () => {
       </View>
       <View style={styles.selectStore}>
         <View style={styles.selectStoreTextAndIcon}>
-          <Image source={require("../../assets/images/store.png")} style={styles.storeImage}/>
+          <Image
+            source={require("../../assets/images/store.png")}
+            style={styles.storeImage}
+          />
           <Text style={styles.selectStoreText}>
             Select a store to search store stock
           </Text>
@@ -125,7 +126,7 @@ const Wishlist = () => {
       <View style={styles.navbar}>
         <TouchableOpacity
           style={styles.navbarTouchableOpacity}
-          onPress={() => router.back()}
+          onPress={() => router.push("/(tabs)")}
         >
           <Octicons
             name="home"
@@ -179,8 +180,7 @@ const Wishlist = () => {
           <Text style={[styles.navbarText, styles.notselected]}>Menu</Text>
         </View>
       </View>
-
-      </View>
+    </View>
   );
 };
 
@@ -188,8 +188,8 @@ export default Wishlist;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
-    flex: 1
+    backgroundColor: "#fff",
+    flex: 1,
   },
   heading: {
     alignItems: "center",
@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
   headingText: {
     fontSize: 22,
     fontWeight: "bold",
-    paddingLeft:5
+    paddingLeft: 5,
   },
   searchAndCart: {
     flexDirection: "row",
@@ -208,10 +208,10 @@ const styles = StyleSheet.create({
   headingTouchableOpacity: {
     padding: 15,
   },
-  headingImage:{
+  headingImage: {
     width: 30,
     height: 30,
-    margin: 10
+    margin: 10,
   },
   tabBar: {
     flexDirection: "row",
@@ -234,9 +234,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingLeft: 4,
   },
-  storeImage:{
-    width:20,
-    height: 20
+  storeImage: {
+    width: 20,
+    height: 20,
   },
   selectStoreText: {
     fontSize: 13,
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     padding: 15,
     justifyContent: "space-between",
-    paddingTop: 20
+    paddingTop: 20,
   },
   onWishlistIcon: {
     padding: 10,
@@ -266,9 +266,9 @@ const styles = StyleSheet.create({
   productNameAndDescription: {
     paddingLeft: 15,
   },
-  productName:{
-    fontSize:16,
-    fontWeight: 'bold'
+  productName: {
+    fontSize: 16,
+    fontWeight: "bold",
   },
   description: {
     fontSize: 13,
@@ -295,8 +295,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     borderTopColor: "#e4e4e4ff",
     borderTopWidth: 4,
-    bottom: Platform.OS === "android" ? -480 : Platform.OS === "web" ? -500 : 0,
-    backgroundColor:'#fff'
+    bottom: Platform.OS === "android" ? -478 : Platform.OS === "web" ? -500 : 0,
+    backgroundColor: "#fff",
   },
   navbarTouchableOpacity: {
     paddingTop: 8,
@@ -312,27 +312,25 @@ const styles = StyleSheet.create({
   notselected: {
     color: "gray",
   },
-  
+
   topBar: {
-    borderWidth:1,
+    borderWidth: 1,
     height: 85,
-    backgroundColor:"#000",
-    alignItems:"center",
-    justifyContent:"space-between",
+    backgroundColor: "#000",
+    alignItems: "center",
+    justifyContent: "space-between",
     flexDirection: "row",
-    paddingRight:10,
-    paddingLeft:10
+    paddingRight: 10,
+    paddingLeft: 10,
   },
 
   topBarContent: {
-    color:"#fff",
-    marginTop:50,
-    fontSize:16,
-    
-    
+    color: "#fff",
+    marginTop: 50,
+    fontSize: 16,
   },
 
   topBarButton: {
-    marginTop:45
-  }
-})
+    marginTop: 45,
+  },
+});

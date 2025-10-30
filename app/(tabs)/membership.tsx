@@ -1,5 +1,20 @@
-import { Ionicons, MaterialIcons } from "@expo/vector-icons";
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+  Ionicons,
+  MaterialIcons,
+  FontAwesome6,
+  Octicons,
+  MaterialCommunityIcons,
+  Fontisto,
+} from "@expo/vector-icons";
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Platform,
+} from "react-native";
+import { router } from "expo-router";
 
 export default function Membership() {
   return (
@@ -8,7 +23,7 @@ export default function Membership() {
       <View style={styles.header}>
         <Text style={styles.headerText}>Membership</Text>
         <View style={styles.headerIcons}>
-          <Ionicons name="notifications-outline" size={22} color="#000" />
+          <FontAwesome6 name="magnifying-glass" size={22} color="#000" />
           <Ionicons
             name="cart-outline"
             size={22}
@@ -54,6 +69,65 @@ export default function Membership() {
       {/* Recently Viewed */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Recently Viewed</Text>
+      </View>
+
+      {/* navber'bottom bar' */}
+      <View style={styles.navbar}>
+        <TouchableOpacity
+          style={styles.navbarTouchableOpacity}
+          onPress={() => router.push("/(tabs)")}
+        >
+          <Octicons
+            name="home"
+            size={20}
+            color="gray"
+            style={styles.navbarIcon}
+          />
+          <Text style={[styles.navbarText, styles.notselected]}>Home</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.navbarTouchableOpacity}
+          onPress={() => router.push("/wishlist")}
+        >
+          <MaterialCommunityIcons
+            name="cards-heart-outline"
+            size={20}
+            color="gray"
+            style={styles.navbarIcon}
+          />
+          <Text style={styles.navbarText}>Wishlist</Text>
+        </TouchableOpacity>
+        <View style={styles.navbarTouchableOpacity}>
+          <Fontisto
+            name="bell"
+            size={20}
+            color="gray"
+            style={styles.navbarIcon}
+          />
+          <Text style={[styles.navbarText, styles.notselected]}>
+            Notification
+          </Text>
+        </View>
+        <TouchableOpacity style={styles.navbarTouchableOpacity}>
+          <Octicons
+            name="person-fill"
+            size={20}
+            color="black"
+            style={styles.navbarIcon}
+          />
+          <Text style={[styles.navbarText, styles.notselected]}>
+            Membership
+          </Text>
+        </TouchableOpacity>
+        <View style={styles.navbarTouchableOpacity}>
+          <Octicons
+            name="three-bars"
+            size={20}
+            color="gray"
+            style={styles.navbarIcon}
+          />
+          <Text style={[styles.navbarText, styles.notselected]}>Menu</Text>
+        </View>
       </View>
     </View>
   );
@@ -138,5 +212,27 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     marginBottom: 8,
+  },
+  navbar: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    borderTopColor: "#e4e4e4ff",
+    borderTopWidth: 4,
+    bottom: Platform.OS === "android" ? -212 : Platform.OS === "web" ? -500 : 0,
+    backgroundColor: "#fff",
+  },
+  navbarTouchableOpacity: {
+    paddingTop: 8,
+    alignItems: "center",
+  },
+  navbarIcon: {
+    paddingBottom: 5,
+    paddingTop: 2,
+  },
+  navbarText: {
+    fontSize: 12,
+  },
+  notselected: {
+    color: "gray",
   },
 });
