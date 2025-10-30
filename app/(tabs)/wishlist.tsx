@@ -39,16 +39,14 @@ const Wishlist = () => {
         <View style={styles.searchAndCart}>
           <FontAwesome6
             name="magnifying-glass"
-            size={17}
+            size={20}
             color="black"
             style={styles.headingTouchableOpacity}
           />
-          <Feather
-            name="shopping-cart"
-            size={17}
-            color="black"
-            style={styles.headingTouchableOpacity}
-          />
+          <Image
+              source={require("../../assets/images/shopping-cart.png")}
+              style={styles.headingImage}
+            />
         </View>
       </View>
       <View style={styles.tabBar}>
@@ -91,7 +89,7 @@ const Wishlist = () => {
       </View>
       <View style={styles.selectStore}>
         <View style={styles.selectStoreTextAndIcon}>
-          <Ionicons name="storefront-outline" size={17} color="black" />
+          <Image source={require("../../assets/images/store.png")} style={styles.storeImage}/>
           <Text style={styles.selectStoreText}>
             Select a store to search store stock
           </Text>
@@ -107,7 +105,7 @@ const Wishlist = () => {
             style={styles.productImage}
           />
           <View style={styles.productNameAndDescription}>
-            <Text>ZIP JACKET</Text>
+            <Text style={styles.productName}>ZIP JACKET</Text>
             <Text style={styles.description}>Product ID: 000001</Text>
             <Text style={styles.description}>Colour: Blue</Text>
             <Text style={styles.description}>Size: UNISEX M</Text>
@@ -116,7 +114,7 @@ const Wishlist = () => {
         </View>
         <MaterialCommunityIcons
           name="cards-heart"
-          size={18}
+          size={21}
           color="red"
           style={styles.onWishlistIcon}
         />
@@ -131,7 +129,7 @@ const Wishlist = () => {
         >
           <Octicons
             name="home"
-            size={17}
+            size={20}
             color="gray"
             style={styles.navbarIcon}
           />
@@ -140,7 +138,7 @@ const Wishlist = () => {
         <TouchableOpacity style={styles.navbarTouchableOpacity}>
           <MaterialCommunityIcons
             name="cards-heart"
-            size={17}
+            size={20}
             color="black"
             style={styles.navbarIcon}
           />
@@ -149,7 +147,7 @@ const Wishlist = () => {
         <View style={styles.navbarTouchableOpacity}>
           <Fontisto
             name="bell"
-            size={17}
+            size={20}
             color="gray"
             style={styles.navbarIcon}
           />
@@ -163,7 +161,7 @@ const Wishlist = () => {
         >
           <Octicons
             name="person"
-            size={17}
+            size={20}
             color="gray"
             style={styles.navbarIcon}
           />
@@ -174,7 +172,7 @@ const Wishlist = () => {
         <View style={styles.navbarTouchableOpacity}>
           <Octicons
             name="three-bars"
-            size={17}
+            size={20}
             color="gray"
             style={styles.navbarIcon}
           />
@@ -182,7 +180,6 @@ const Wishlist = () => {
         </View>
       </View>
 
-      
       </View>
   );
 };
@@ -191,17 +188,19 @@ export default Wishlist;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    backgroundColor: '#fff',
+    flex: 1
   },
   heading: {
     alignItems: "center",
     justifyContent: "space-between",
     flexDirection: "row",
-    padding: 20,
+    padding: 10,
   },
   headingText: {
-    fontSize: 16,
+    fontSize: 22,
     fontWeight: "bold",
+    paddingLeft:5
   },
   searchAndCart: {
     flexDirection: "row",
@@ -209,14 +208,20 @@ const styles = StyleSheet.create({
   headingTouchableOpacity: {
     padding: 15,
   },
+  headingImage:{
+    width: 30,
+    height: 30,
+    margin: 10
+  },
   tabBar: {
     flexDirection: "row",
     borderBottomWidth: 2,
     borderBottomColor: "#dcdcdcff",
   },
   tabBarText: {
-    paddingLeft: 71,
-    paddingRight: 71,
+    fontSize: 18,
+    paddingLeft: 81,
+    paddingRight: 81,
     paddingBottom: 13,
   },
   selectStore: {
@@ -229,8 +234,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingLeft: 4,
   },
+  storeImage:{
+    width:20,
+    height: 20
+  },
   selectStoreText: {
-    fontSize: 11,
+    fontSize: 13,
     paddingLeft: 10,
     color: "gray",
   },
@@ -241,6 +250,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     padding: 15,
     justifyContent: "space-between",
+    paddingTop: 20
   },
   onWishlistIcon: {
     padding: 10,
@@ -250,11 +260,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   productImage: {
-    height: 115,
-    width: 85,
+    height: 125,
+    width: 90,
   },
   productNameAndDescription: {
     paddingLeft: 15,
+  },
+  productName:{
+    fontSize:16,
+    fontWeight: 'bold'
   },
   description: {
     fontSize: 13,
@@ -281,7 +295,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     borderTopColor: "#e4e4e4ff",
     borderTopWidth: 4,
-    bottom: Platform.OS === "android" ? -500 : Platform.OS === "web" ? -500 : 0,
+    bottom: Platform.OS === "android" ? -480 : Platform.OS === "web" ? -500 : 0,
+    backgroundColor:'#fff'
   },
   navbarTouchableOpacity: {
     paddingTop: 8,
@@ -292,7 +307,7 @@ const styles = StyleSheet.create({
     paddingTop: 2,
   },
   navbarText: {
-    fontSize: 10,
+    fontSize: 12,
   },
   notselected: {
     color: "gray",

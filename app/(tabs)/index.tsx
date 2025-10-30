@@ -253,7 +253,7 @@ export default function Index() {
         }}>5 item(s)</Text>
         
         <TouchableOpacity>
-          <Image
+          <Image 
             source={require("../../assets/images/sort.png")}
           />
         </TouchableOpacity>
@@ -371,51 +371,51 @@ export default function Index() {
   
       {/* navber'bottom bar' */}
         <View style={styles.navbar}>
-          <TouchableOpacity style={styles.bottomTab}>
+          <TouchableOpacity style={styles.navbarTouchableOpacity}>
             <Octicons
               name="home-fill"
-              size={17}
+              size={20}
               color="black"
-              style={styles.icon}
+              style={styles.navbarIcon}
             />
-            <Text style={styles.text}>Home</Text>
+            <Text style={styles.navbarText}>Home</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={styles.bottomTab}
+            style={styles.navbarTouchableOpacity}
             onPress={() => router.push("/wishlist")}
           >
             <MaterialCommunityIcons
               name="cards-heart-outline"
-              size={17}
+              size={20}
               color="gray"
-              style={styles.icon}
+              style={styles.navbarIcon}
             />
-            <Text style={[styles.text, styles.notselected]}>Wishlist</Text>
+            <Text style={[styles.navbarText, styles.notselected]}>Wishlist</Text>
           </TouchableOpacity>
-          <View style={styles.bottomTab}>
-            <Fontisto name="bell" size={17} color="gray" style={styles.icon} />
-            <Text style={[styles.text, styles.notselected]}>Notification</Text>
+          <View style={styles.navbarTouchableOpacity}>
+            <Fontisto name="bell" size={20} color="gray" style={styles.navbarIcon} />
+            <Text style={[styles.navbarText, styles.notselected]}>Notification</Text>
           </View>
           <TouchableOpacity
-            style={styles.bottomTab}
+            style={styles.navbarTouchableOpacity}
             onPress={() => router.push("/membership")}
           >
             <Octicons
               name="person"
-              size={17}
+              size={20}
               color="gray"
-              style={styles.icon}
+              style={styles.navbarIcon}
             />
-            <Text style={[styles.text, styles.notselected]}>Membership</Text>
+            <Text style={[styles.navbarText, styles.notselected]}>Membership</Text>
           </TouchableOpacity>
-          <View style={styles.bottomTab}>
+          <View style={styles.navbarTouchableOpacity}>
             <Octicons
               name="three-bars"
-              size={17}
+              size={20}
               color="gray"
-              style={styles.icon}
+              style={styles.navbarIcon}
             />
-            <Text style={[styles.text, styles.notselected]}>Menu</Text>
+            <Text style={[styles.navbarText, styles.notselected]}>Menu</Text>
           </View>
         </View>
       </View>
@@ -424,31 +424,32 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
-  navbar: {
+navbar: {
     flexDirection: "row",
     justifyContent: "space-evenly",
     borderTopColor: "#e4e4e4ff",
     borderTopWidth: 4,
-    bottom: Platform.OS === "android" ? 0 : Platform.OS === "web" ? -500 : 0,
   },
-  bottomTab: {
+  navbarTouchableOpacity: {
     paddingTop: 8,
     alignItems: "center",
   },
-  icon: {
+  navbarIcon: {
     paddingBottom: 5,
     paddingTop: 2,
   },
-  text: {
-    fontSize: 10,
+  navbarText: {
+    fontSize: 12,
   },
   notselected: {
     color: "gray",
   },
 
   container: {
-    backgroundColor:"#fff"
+    backgroundColor:"#fff",
+    flex: 1
   },
+
   topBar: {
     borderWidth:1,
     height: 85,
@@ -465,8 +466,6 @@ const styles = StyleSheet.create({
     marginTop:50,
     fontSize:16,
     paddingBottom:5
-    
-    
   },
 
   topBarButton: {
@@ -484,21 +483,19 @@ const styles = StyleSheet.create({
   },
 
   limitedOfferText: {
-    fontSize:24,
+    fontSize:22,
     paddingRight:55,
     paddingBottom:5
-    
   },
 
   navigationBar: {
     flexDirection: "row",
     justifyContent: "space-around",
-    marginTop:20,
-    
+    marginTop:18,
   },
 
   tab: {
-    fontSize:22,
+    fontSize:19,
     color:"rgba( 0, 0, 0, 0.65)",
     paddingBottom:18
   },
@@ -512,8 +509,7 @@ const styles = StyleSheet.create({
   filterSection: {
     flexDirection:"row",
     justifyContent:"space-around",
-    marginTop: 30
-
+    marginTop: 20
   },
 
     filterCategory: {
@@ -540,7 +536,6 @@ const styles = StyleSheet.create({
   productContainer: {
     width:"50%",
     flex:0.5
-
   },
 
   colorSelections: {
@@ -587,7 +582,6 @@ const styles = StyleSheet.create({
     color: "rgba(0,0,0,0.5)",
     marginBottom: 5,
     fontSize:15,
-
   },
 
   productDesc: {
